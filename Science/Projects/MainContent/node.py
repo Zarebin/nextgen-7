@@ -42,7 +42,7 @@ class Node():
             Node: The node's parent.
             None: If there is no parents.
         """
-        return self._node.getparent()
+        return Node(self._node.getparent())
 
     def text_length(self) -> int:
         """
