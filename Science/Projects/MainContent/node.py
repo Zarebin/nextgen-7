@@ -44,6 +44,13 @@ class Node():
         """
         return Node(self._node.getparent())
 
+    def text_content(self) -> str:
+        """
+        Returns:
+            str: The node's text content
+        """
+        return self._node.text_content()
+
     def text_length(self) -> int:
         """
         Returns:
