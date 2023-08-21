@@ -29,6 +29,13 @@ class Parser():
         """
         return Node(self._root)
 
+    def title(self) -> str:
+        """
+        Returns:
+            str: Text of the page title.
+        """
+        return self._root.find('.//title').text
+
     def leaves(self, tags_list: list) -> list:
         """        
         Args:
