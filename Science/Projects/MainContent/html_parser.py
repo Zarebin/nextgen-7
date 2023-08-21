@@ -29,7 +29,7 @@ class Parser():
         """
         return Node(self._root)
 
-    def leavs(self, tags_list: list) -> list:
+    def leaves(self, tags_list: list) -> list:
         """        
         Args:
             tags_list (str): List of tags to find in the leaves or near them.
